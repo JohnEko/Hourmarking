@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+	<div class="container">
+		  <h2>Hours Table</h2>
+		  <p>Mark your Hours</p><hr>
+				<div class="row centered-form center-block">
+				    <div class="col-md-6 m-auto">
+						<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+						   <table>
+						    {{ form.as_table}}
+						   </table>
+						    <input type="submit" value="Submit">
+						</form>
+						
+				</div>
+		</div>
+    </div>    
+</body>
+</html>
